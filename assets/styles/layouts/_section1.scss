@@ -14,7 +14,7 @@ h3{
     font-weight: 100;
     padding: 15px 0 25px;
 }
-button{
+button.discover{
     width: 225px;
     height: 50px;
     margin: 0 auto;
@@ -25,5 +25,11 @@ button{
     border: none;
     background: rgb(147,86,220);
 background: linear-gradient(6deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%, rgba(153,226,208,1) 100%);
+transition: 0.5s;
+-webkit-box-shadow: 2px 2px 15px 5px rgba(54,54,54,0.66); 
+box-shadow: 2px 2px 15px 5px rgba(54, 54, 54, 0.263);
+&:hover{
+    filter: brightness(1.1); 
+}
 }
 }
