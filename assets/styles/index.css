@@ -159,7 +159,7 @@ header .location h2 {
   margin: 30px auto;
 }
 .section3 .cards .img1 {
-  background: url(/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) bottom/cover no-repeat;
+  background: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) bottom/cover no-repeat;
   background-size: cover;
   height: 175px;
   border-radius: 15px 15px 0 0;
