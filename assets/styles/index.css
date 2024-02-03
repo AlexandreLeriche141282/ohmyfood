@@ -16,6 +16,11 @@ header .title {
       -ms-flex-align: center;
           align-items: center;
 }
+header .title i {
+  padding-left: 30px;
+  position: absolute;
+  font-size: 20px;
+}
 header .title img {
   width: 45%;
   margin: 25px auto 15px;
@@ -299,4 +304,99 @@ footer .txtFooter a {
 }
 footer .txtFooter span {
   margin-left: 10px;
+}
+
+section.background {
+  background: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) center/cover no-repeat;
+  background-size: cover;
+  height: 350px;
+  position: relative;
+}
+section.background .titleMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 40px 40px 0 0;
+  background: rgb(232, 232, 232);
+  padding-top: 30px;
+  position: absolute;
+  width: 100%;
+  bottom: -1px;
+  margin: 0;
+}
+section.background .titleMenu h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 200;
+  font-size: 29px;
+}
+section.background .titleMenu i {
+  font-size: 25px;
+  position: absolute;
+  right: 30px;
+  padding-top: 10px;
+}
+section.background .titleMenu .fa-solid {
+  opacity: 0;
+}
+section.background .titleMenu .fa-solid:hover {
+  opacity: 1;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  background-image: linear-gradient(6deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%, rgb(153, 226, 208) 100%);
+}
+
+.containerMenu {
+  background: rgb(232, 232, 232);
+  padding-bottom: 10px;
+}
+.containerMenu section.entrees {
+  width: 90%;
+  margin: 0 auto;
+}
+.containerMenu section.entrees h2 {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: rgb(123, 123, 123);
+  font-weight: 200;
+  padding-top: 30px;
+}
+.containerMenu section.entrees h2:after {
+  content: "";
+  border-bottom: solid 3px rgb(153, 226, 208);
+  display: block;
+  width: 45px;
+}
+.containerMenu section.entrees .entree {
+  height: 70px;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+  border-radius: 15px;
+}
+.containerMenu section.entrees .entree .entreeTxt {
+  padding-left: 15px;
+}
+.containerMenu section.entrees .entree .entreeTxt span {
+  font-weight: 900;
+  font-size: 19px;
+  line-height: 30px;
+}
+.containerMenu section.entrees .entree .price {
+  padding-right: 15px;
+  padding-top: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }/*# sourceMappingURL=index.css.map */
