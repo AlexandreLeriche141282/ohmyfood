@@ -7,6 +7,10 @@
   list-style: none;
   text-decoration: none;
 }
+* a {
+  text-decoration: none;
+  color: black;
+}
 
 header .title {
   display: -webkit-box;
@@ -319,7 +323,7 @@ section.background .titleMenu {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   border-radius: 40px 40px 0 0;
-  background: rgb(232, 232, 232);
+  background: rgb(246, 246, 246);
   padding-top: 30px;
   position: absolute;
   width: 100%;
