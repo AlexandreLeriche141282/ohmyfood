@@ -4,6 +4,8 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  list-style: none;
+  text-decoration: none;
 }
 
 header .title {
@@ -152,6 +154,12 @@ header .location h2 {
 
 .section3 {
   background: rgb(246, 246, 246);
+  margin-top: 50px;
+  padding-top: 60px;
+}
+.section3 h2 {
+  width: 90%;
+  margin: 0 auto;
 }
 .section3 .cards {
   width: 90%;
@@ -215,4 +223,32 @@ header .location h2 {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   background-image: linear-gradient(6deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%, rgb(153, 226, 208) 100%);
+}
+
+footer {
+  background: rgb(53, 53, 53);
+  padding-bottom: 20px;
+}
+footer .titleFooter {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+footer .titleFooter img {
+  width: 100px;
+}
+footer .txtFooter {
+  width: 90%;
+  margin: 0 auto;
+}
+footer .txtFooter i {
+  font-size: 12px;
+  width: 15px;
+}
+footer .txtFooter a {
+  color: white;
+  line-height: 25px;
+}
+footer .txtFooter span {
+  margin-left: 10px;
 }/*# sourceMappingURL=index.css.map */

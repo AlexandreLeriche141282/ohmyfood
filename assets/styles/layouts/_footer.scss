@@ -1,0 +1,30 @@
+footer{
+background: rgb(53,53,53);
+padding-bottom: 20px;
+
+.titleFooter{
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+    img{
+        width: 100px;
+    }
+}
+
+.txtFooter{
+    width: 90%;
+    margin: 0 auto;
+
+    i{
+        font-size: 12px;
+        width: 15px;
+    }
+    a{
+        color: white;
+        line-height: 25px;
+    }
+    span{
+        margin-left: 10px;
+    }
+}
+}
