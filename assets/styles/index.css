@@ -359,7 +359,7 @@ section.background .titleMenu .fa-solid:hover {
   padding-bottom: 10px;
 }
 .containerMenu section.entrees {
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
 }
 .containerMenu section.entrees h2 {
@@ -401,6 +401,12 @@ section.background .titleMenu .fa-solid:hover {
 .containerMenu section.entrees .entree:hover .price {
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
+}
+.containerMenu section.entrees .entree:hover .entreeTxt p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 250px;
 }
 .containerMenu section.entrees .entree .animation {
   background: rgb(153, 226, 208);
@@ -444,6 +450,7 @@ section.background .titleMenu .fa-solid:hover {
 }
 .containerMenu section.entrees .entree .entreeTxt {
   padding-left: 15px;
+  width: 100%;
 }
 .containerMenu section.entrees .entree .entreeTxt span {
   font-weight: 900;
@@ -451,8 +458,8 @@ section.background .titleMenu .fa-solid:hover {
   line-height: 30px;
 }
 .containerMenu section.entrees .entree .price {
-  padding-right: 25px;
-  padding-top: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
   font-weight: 600;
   letter-spacing: 0.5px;
   height: 100%;

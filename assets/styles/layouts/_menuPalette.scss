@@ -49,7 +49,7 @@ section.background{
                 padding-bottom: 10px;
        
     section.entrees{
-        width: 90%;
+        width: 95%;
         margin: 0 auto;
 
         h2{
@@ -78,6 +78,7 @@ section.background{
                 box-shadow: 2px 2px 15px 5px rgba(54, 54, 54, 0.129);
                 position: relative; 
                 &:hover{
+                    
                     .animation{
                         transform: translateX(0);
                         visibility: visible;
@@ -86,6 +87,12 @@ section.background{
                     .price{
                         transform: translateX(-100%);
                     }
+                    .entreeTxt p{
+                        text-overflow: ellipsis; 
+                         white-space: nowrap;
+                         overflow: hidden;
+                         max-width: 250px;
+                     }
                 }
                 
                 .animation{
@@ -122,15 +129,23 @@ section.background{
                 
                 .entreeTxt{
                     padding-left: 15px;
+                    width: 100%;
+                    
+                        
+                        
+                        
+                    
                      span{
                         font-weight: 900;
                         font-size: 19px;
                         line-height: 30px;
+                        
                     }
+                    
                 }
                 .price{
-                    padding-right: 25px;
-                    padding-top: 20px;
+                    padding-right: 20px;
+                    padding-top: 40px;
                     font-weight: 600;
                     letter-spacing: 0.5px;
                     height: 100%;
