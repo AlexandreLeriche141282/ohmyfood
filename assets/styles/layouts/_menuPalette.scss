@@ -1,7 +1,7 @@
 section.background{
     background: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) center/cover no-repeat;
     background-size: cover;
-    height: 350px;
+    height: 300px;
     position: relative;
 
     .titleMenu {
@@ -74,7 +74,52 @@ section.background{
                 align-items: center;
                 margin: 10px 0;
                 border-radius: 15px;
+                -webkit-box-shadow: 2px 2px 15px 5px rgba(196, 184, 184, 0.507); 
+                box-shadow: 2px 2px 15px 5px rgba(54, 54, 54, 0.129);
+                position: relative; 
+                &:hover{
+                    .animation{
+                        transform: translateX(0);
+                        visibility: visible;
+                        
+                    }
+                    .price{
+                        transform: translateX(-100%);
+                    }
+                }
+                
+                .animation{
+                    background:rgb(153,226,208) ;
+                    height: 100%;
+                    width: 60px;
+                    position: absolute;
+                    right: 0;
+                    border-radius: 0 15px 15px 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transform: translateX(100%);
+                    visibility: hidden;
+                    transition:ease 0.4s;
+                    
+                }
+                i {
+                    border-radius: 50%;
+                    background: white;
+                    width: 20px;
+                    height: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    &:after{
+                    content:"";
+                }
 
+                }
+                
+                    
+                
                 .entreeTxt{
                     padding-left: 15px;
                      span{
@@ -84,16 +129,43 @@ section.background{
                     }
                 }
                 .price{
-                    padding-right: 15px;
+                    padding-right: 25px;
                     padding-top: 20px;
                     font-weight: 600;
                     letter-spacing: 0.5px;
+                    height: 100%;
+                    transition:ease 0.4s;
+                    
                 }
                 
             }
 
     }
         
+    }
+    .buttonMenu{
+        display: flex;
+        justify-content: center;
+        background: rgb(246,246,246);
+        padding: 20px;
+        button.discoverMenu{
+        width: 190px;
+        height: 50px;
+        border-radius: 40px;
+        margin-bottom: 20px;
+        color: white;
+        font-size: 16px;
+        border: none;
+        background: rgb(147,86,220);
+        background: linear-gradient(6deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%, rgba(153,226,208,1) 100%);
+        transition: 0.5s;
+        -webkit-box-shadow: 2px 2px 15px 5px rgba(54,54,54,0.66); 
+        box-shadow: 2px 2px 15px 5px rgba(54, 54, 54, 0.263);
+        &:hover{
+        filter: brightness(1.1); 
+    }
+    }
+    
     }
 
     
