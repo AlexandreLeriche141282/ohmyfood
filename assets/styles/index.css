@@ -27,8 +27,13 @@ header .title i {
   font-size: 20px;
 }
 header .title img {
-  width: 45%;
+  width: 200px;
   margin: 25px auto 15px;
+}
+@media screen and (min-width: 1400px) {
+  header .title img {
+    margin: 30px auto 30px;
+  }
 }
 header .location {
   display: -webkit-box;
@@ -71,6 +76,12 @@ header .location h2 {
   width: 246px;
   margin: 0 auto;
   font-weight: 900;
+  font-size: calc(22px + 0.95vw);
+}
+@media screen and (min-width: 1400px) {
+  .section1 h2 {
+    width: 100%;
+  }
 }
 .section1 h3 {
   font-weight: 100;
@@ -85,6 +96,7 @@ header .location h2 {
   color: white;
   font-size: 16px;
   border: none;
+  cursor: pointer;
   background: rgb(147, 86, 220);
   background: linear-gradient(6deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%, rgb(153, 226, 208) 100%);
   -webkit-transition: 0.5s;
@@ -109,6 +121,17 @@ header .location h2 {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
+}
+@media screen and (min-width: 1400px) {
+  .section2 .buttonContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0 auto;
+    width: 1100px;
+    gap: 30px;
+  }
 }
 .section2 .buttonContainer .choice {
   position: relative;
@@ -140,6 +163,11 @@ header .location h2 {
 .section2 h2 {
   padding: 50px 25px 30px;
 }
+@media screen and (min-width: 1400px) {
+  .section2 h2 {
+    padding-left: 370px;
+  }
+}
 .section2 span {
   position: absolute;
   left: 0;
@@ -167,9 +195,22 @@ header .location h2 {
   margin-top: 50px;
   padding-top: 60px;
 }
+@media screen and (min-width: 1400px) {
+  .section3 .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 1100px;
+    margin: 0 auto;
+  }
+}
 .section3 h2 {
   width: 90%;
   margin: 0 auto;
+}
+@media screen and (min-width: 1400px) {
+  .section3 h2 {
+    width: 1050px;
+  }
 }
 .section3 .cards {
   width: 90%;
@@ -181,6 +222,7 @@ header .location h2 {
   background-size: cover;
   height: 175px;
   border-radius: 15px 15px 0 0;
+  position: relative;
 }
 .section3 .cards .img1 p {
   position: absolute;
@@ -211,6 +253,7 @@ header .location h2 {
   background-size: cover;
   height: 175px;
   border-radius: 15px 15px 0 0;
+  position: relative;
 }
 .section3 .cards .img2 p {
   position: absolute;
@@ -287,10 +330,30 @@ footer {
   background: rgb(53, 53, 53);
   padding-bottom: 20px;
 }
+@media screen and (min-width: 1400px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 footer .titleFooter {
   width: 90%;
   margin: 0 auto;
   padding: 20px 0;
+}
+@media screen and (min-width: 1400px) {
+  footer .titleFooter {
+    width: 12%;
+    padding-left: 60px;
+  }
 }
 footer .titleFooter img {
   width: 100px;
@@ -298,6 +361,22 @@ footer .titleFooter img {
 footer .txtFooter {
   width: 90%;
   margin: 0 auto;
+}
+@media screen and (min-width: 1400px) {
+  footer .txtFooter ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+@media screen and (min-width: 1400px) {
+  footer .txtFooter ul li {
+    padding: 0 20px;
+  }
 }
 footer .txtFooter i {
   font-size: 12px;
@@ -317,6 +396,11 @@ section.background {
   height: 300px;
   position: relative;
 }
+@media screen and (min-width: 1400px) {
+  section.background {
+    height: 380px;
+  }
+}
 section.background .titleMenu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -331,6 +415,17 @@ section.background .titleMenu {
   bottom: -1px;
   margin: 0;
 }
+@media screen and (min-width: 1400px) {
+  section.background .titleMenu {
+    left: 50%;
+    -webkit-transform: translate(-50%, 50%);
+            transform: translate(-50%, 50%);
+    width: 1050px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 section.background .titleMenu h1 {
   font-family: "Shrikhand", sans-serif;
   font-weight: 200;
@@ -341,6 +436,11 @@ section.background .titleMenu i {
   position: absolute;
   right: 30px;
   padding-top: 10px;
+}
+@media screen and (min-width: 1400px) {
+  section.background .titleMenu i {
+    right: 320px;
+  }
 }
 section.background .titleMenu .fa-solid {
   opacity: 0;
@@ -358,10 +458,22 @@ section.background .titleMenu .fa-solid:hover {
 .containerMenu {
   background: rgb(246, 246, 246);
   padding-bottom: 10px;
+  padding-top: 30px;
+}
+@media screen and (min-width: 1400px) {
+  .containerMenu {
+    width: 1050px;
+    margin: 0 auto;
+  }
 }
 .containerMenu section.entrees {
   width: 95%;
   margin: 0 auto;
+}
+@media screen and (min-width: 1400px) {
+  .containerMenu section.entrees {
+    width: 640px;
+  }
 }
 .containerMenu section.entrees h2 {
   text-transform: uppercase;
@@ -409,6 +521,11 @@ section.background .titleMenu .fa-solid:hover {
   white-space: nowrap;
   overflow: hidden;
   max-width: 250px;
+}
+@media screen and (min-width: 1400px) {
+  .containerMenu section.entrees .entree:hover .entreeTxt p {
+    max-width: 400px;
+  }
 }
 .containerMenu section.entrees .entree:hover i {
   -webkit-transform: rotate(360deg);
@@ -485,6 +602,12 @@ section.background .titleMenu .fa-solid:hover {
   background: rgb(246, 246, 246);
   padding: 20px;
 }
+@media screen and (min-width: 1400px) {
+  .buttonMenu {
+    width: 1050px;
+    margin: 0 auto;
+  }
+}
 .buttonMenu button.discoverMenu {
   width: 190px;
   height: 50px;
@@ -493,6 +616,7 @@ section.background .titleMenu .fa-solid:hover {
   color: white;
   font-size: 16px;
   border: none;
+  cursor: pointer;
   background: rgb(147, 86, 220);
   background: linear-gradient(6deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%, rgb(153, 226, 208) 100%);
   -webkit-transition: 0.5s;
@@ -511,6 +635,11 @@ section.backgroundNote {
   height: 300px;
   position: relative;
 }
+@media screen and (min-width: 1400px) {
+  section.backgroundNote {
+    height: 380px;
+  }
+}
 section.backgroundNote .titleMenu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -524,6 +653,14 @@ section.backgroundNote .titleMenu {
   width: 100%;
   bottom: -1px;
   margin: 0;
+}
+@media screen and (min-width: 1400px) {
+  section.backgroundNote .titleMenu {
+    left: 50%;
+    -webkit-transform: translate(-50%, 50%);
+            transform: translate(-50%, 50%);
+    width: 1050px;
+  }
 }
 section.backgroundNote .titleMenu h1 {
   font-family: "Shrikhand", sans-serif;
@@ -555,6 +692,11 @@ section.backgroundFrançaise {
   height: 300px;
   position: relative;
 }
+@media screen and (min-width: 1400px) {
+  section.backgroundFrançaise {
+    height: 380px;
+  }
+}
 section.backgroundFrançaise .titleMenu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -568,6 +710,14 @@ section.backgroundFrançaise .titleMenu {
   width: 100%;
   bottom: -1px;
   margin: 0;
+}
+@media screen and (min-width: 1400px) {
+  section.backgroundFrançaise .titleMenu {
+    left: 50%;
+    -webkit-transform: translate(-50%, 50%);
+            transform: translate(-50%, 50%);
+    width: 1050px;
+  }
 }
 section.backgroundFrançaise .titleMenu h1 {
   font-family: "Shrikhand", sans-serif;
@@ -599,6 +749,11 @@ section.backgroundDelice {
   height: 300px;
   position: relative;
 }
+@media screen and (min-width: 1400px) {
+  section.backgroundDelice {
+    height: 380px;
+  }
+}
 section.backgroundDelice .titleMenu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -612,6 +767,14 @@ section.backgroundDelice .titleMenu {
   width: 100%;
   bottom: -1px;
   margin: 0;
+}
+@media screen and (min-width: 1400px) {
+  section.backgroundDelice .titleMenu {
+    left: 50%;
+    -webkit-transform: translate(-50%, 50%);
+            transform: translate(-50%, 50%);
+    width: 1050px;
+  }
 }
 section.backgroundDelice .titleMenu h1 {
   font-family: "Shrikhand", sans-serif;
