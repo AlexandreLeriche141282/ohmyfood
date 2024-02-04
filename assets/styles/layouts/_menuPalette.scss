@@ -24,6 +24,7 @@ section.background{
         position: absolute;
         right: 30px;
         padding-top: 10px;
+        
     }
     .fa-solid{
         opacity: 0;
@@ -74,6 +75,7 @@ section.background{
                 align-items: center;
                 margin: 10px 0;
                 border-radius: 15px;
+                overflow: hidden;
                 -webkit-box-shadow: 2px 2px 15px 5px rgba(196, 184, 184, 0.507); 
                 box-shadow: 2px 2px 15px 5px rgba(54, 54, 54, 0.129);
                 position: relative; 
@@ -92,6 +94,9 @@ section.background{
                          white-space: nowrap;
                          overflow: hidden;
                          max-width: 250px;
+                     }
+                     i{
+                        transform: rotate(360deg);
                      }
                 }
                 
@@ -118,6 +123,7 @@ section.background{
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    transition: 0.4s;
                     
                     &:after{
                     content:"";

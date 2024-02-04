@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -389,6 +390,7 @@ section.background .titleMenu .fa-solid:hover {
           align-items: center;
   margin: 10px 0;
   border-radius: 15px;
+  overflow: hidden;
   -webkit-box-shadow: 2px 2px 15px 5px rgba(196, 184, 184, 0.507);
   box-shadow: 2px 2px 15px 5px rgba(54, 54, 54, 0.129);
   position: relative;
@@ -407,6 +409,10 @@ section.background .titleMenu .fa-solid:hover {
   white-space: nowrap;
   overflow: hidden;
   max-width: 250px;
+}
+.containerMenu section.entrees .entree:hover i {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 .containerMenu section.entrees .entree .animation {
   background: rgb(153, 226, 208);
@@ -444,6 +450,8 @@ section.background .titleMenu .fa-solid:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 .containerMenu section.entrees .entree i:after {
   content: "";
@@ -532,6 +540,94 @@ section.backgroundNote .titleMenu .fa-solid {
   opacity: 0;
 }
 section.backgroundNote .titleMenu .fa-solid:hover {
+  opacity: 1;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  background-image: linear-gradient(6deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%, rgb(153, 226, 208) 100%);
+}
+
+section.backgroundFrançaise {
+  background: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) center/cover no-repeat;
+  background-size: cover;
+  height: 300px;
+  position: relative;
+}
+section.backgroundFrançaise .titleMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 40px 40px 0 0;
+  background: rgb(246, 246, 246);
+  padding-top: 30px;
+  position: absolute;
+  width: 100%;
+  bottom: -1px;
+  margin: 0;
+}
+section.backgroundFrançaise .titleMenu h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 200;
+  font-size: 29px;
+}
+section.backgroundFrançaise .titleMenu i {
+  font-size: 25px;
+  position: absolute;
+  right: 30px;
+  padding-top: 10px;
+}
+section.backgroundFrançaise .titleMenu .fa-solid {
+  opacity: 0;
+}
+section.backgroundFrançaise .titleMenu .fa-solid:hover {
+  opacity: 1;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  background-image: linear-gradient(6deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%, rgb(153, 226, 208) 100%);
+}
+
+section.backgroundDelice {
+  background: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) center/cover no-repeat;
+  background-size: cover;
+  height: 300px;
+  position: relative;
+}
+section.backgroundDelice .titleMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 40px 40px 0 0;
+  background: rgb(246, 246, 246);
+  padding-top: 30px;
+  position: absolute;
+  width: 100%;
+  bottom: -1px;
+  margin: 0;
+}
+section.backgroundDelice .titleMenu h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 200;
+  font-size: 29px;
+}
+section.backgroundDelice .titleMenu i {
+  font-size: 25px;
+  position: absolute;
+  right: 30px;
+  padding-top: 10px;
+}
+section.backgroundDelice .titleMenu .fa-solid {
+  opacity: 0;
+}
+section.backgroundDelice .titleMenu .fa-solid:hover {
   opacity: 1;
   color: transparent;
   background-clip: text;
