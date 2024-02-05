@@ -6,11 +6,74 @@
     list-style: none;
     text-decoration: none;
 
-    
     a{
       text-decoration: none;
       color: black;
     }
+    
+    body.animIndex{
+      opacity: 0;
+      animation: headerAnim ease-in-out 8s forwards;
+      @keyframes headerAnim {
+              to {
+                transform: translateY(0);
+                opacity: 1;
+              }
+            }  
+      }
+      .loader {
+        overflow: hidden;
+        width: 50%;
+        height: 50%;
+        position: absolute;
+        top: 0; left: 50%;
+        transform: translateX(-50%);
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+        align-content: center; 
+        justify-content: center;  
+        z-index: 100000;
+        animation:stop ease-in-out 3s forwards;
+        
+        @media screen and (max-width:1400px) {
+          top: -180px;
+        }
+        
+        @keyframes stop {
+          to{
+            display: none;
+          }
+        }
+      }
+      
+      .loader__element {
+        border-radius: 100%;
+        margin:30px;
+        
+      }
+      
+      .loader__element:nth-child(1) {
+        animation: preloader .6s ease-in-out alternate infinite;
+        border:6px solid rgb(153,226,208);
+      }
+      .loader__element:nth-child(2) {
+        animation: preloader .6s ease-in-out alternate .2s infinite;
+        border:6px solid rgb(0,135,102);
+      }
+      
+      .loader__element:nth-child(3) {
+        animation: preloader .6s ease-in-out alternate .4s infinite;
+        border:6px solid rgb(147,86,220);
+      }
+      
+      @keyframes preloader {
+        100% { 
+          transform: scale(2);
+          
+        }
+        
+      }
   }
   
   
