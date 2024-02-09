@@ -9,6 +9,8 @@
         margin: 0 auto;
         width: 1100px;
         gap: 30px;
+
+        
     }
       .choice{
         position: relative;
@@ -32,6 +34,7 @@
 
     i{
         font-size: 20px;
+        
     }
 }  
     }
@@ -56,5 +59,13 @@ span{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+i.fa-solid.fa-mobile-screen-button,i.fa-solid.fa-list-ul 
+{
+    color:#7e7e7e ;
+}
+
+i.fa-solid.fa-store{
+    color:#9356dc ;
 }
 }

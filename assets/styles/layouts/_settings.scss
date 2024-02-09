@@ -13,69 +13,69 @@
   
 }
 
-.animLoader{
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      background: white;
-      animation:loader 8s ease-in-out forwards;
-      z-index: 100;
+// .animLoader{
+//       position: fixed;
+//       width: 100%;
+//       height: 100%;
+//       background: white;
+//       animation:loader 8s ease-in-out forwards;
+//       z-index: 100;
       
-      @keyframes loader {
-        to{
-          background: none;
-          position: relative;
-        }
-      }
+//       @keyframes loader {
+//         to{
+//           background: none;
+//           position: relative;
+//         }
+//       }
 
-      .loader {
-            width: 50%;
-            height: 50%;
-            top: 25%; left: 50%;
-            position: absolute;
-            z-index: 150;
-            transform: translateX(-50%);
-            padding-top: 20px;
-            display: flex;
-            align-items: center;
-            align-content: center; 
-            justify-content: center;  
-            animation:stop ease-in-out 3s forwards;
+//       .loader {
+//             width: 50%;
+//             height: 50%;
+//             top: 25%; left: 50%;
+//             position: absolute;
+//             z-index: 150;
+//             transform: translateX(-50%);
+//             padding-top: 20px;
+//             display: flex;
+//             align-items: center;
+//             align-content: center; 
+//             justify-content: center;  
+//             animation:stop ease-in-out 3s forwards;
             
-            @media screen and (max-width:1400px) {
-              top: -10px;
-            }
+//             @media screen and (max-width:1400px) {
+//               top: -10px;
+//             }
             
-            @keyframes stop {
-              to{
-                display: none;
-              }
-            }
-          }
+//             @keyframes stop {
+//               to{
+//                 display: none;
+//               }
+//             }
+//           }
           
-          .loaderElement {
-            border-radius: 100%;
-            margin:30px;
-          }
+//           .loaderElement {
+//             border-radius: 100%;
+//             margin:30px;
+//           }
           
-          .loaderElement:nth-child(1) {
-            animation: preloader .6s ease-in-out infinite;
-            border:6px solid rgb(153,226,208);
-          }
-          .loaderElement:nth-child(2) {
-            animation: preloader .8s ease-in-out infinite;
-            border:6px solid rgb(0,135,102);
-          }
+//           .loaderElement:nth-child(1) {
+//             animation: preloader .6s ease-in-out infinite;
+//             border:6px solid rgb(153,226,208);
+//           }
+//           .loaderElement:nth-child(2) {
+//             animation: preloader .8s ease-in-out infinite;
+//             border:6px solid rgb(0,135,102);
+//           }
           
-          .loaderElement:nth-child(3) {
-            animation: preloader 1s ease-in-out infinite;
-            border:6px solid rgb(147,86,220);
-          }
+//           .loaderElement:nth-child(3) {
+//             animation: preloader 1s ease-in-out infinite;
+//             border:6px solid rgb(147,86,220);
+//           }
           
-          @keyframes preloader {
-            100% { 
-              transform: scale(2);
+//           @keyframes preloader {
+//             100% { 
+//               transform: scale(2);
               
-            }
-      }
-  }
+//             }
+//       }
+//   }
