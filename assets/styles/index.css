@@ -24,16 +24,12 @@
 }
 @-webkit-keyframes loader {
   to {
-    -webkit-transform: translateY();
-            transform: translateY();
     background: none;
     position: relative;
   }
 }
 @keyframes loader {
   to {
-    -webkit-transform: translateY();
-            transform: translateY();
     background: none;
     position: relative;
   }
