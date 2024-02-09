@@ -12,32 +12,39 @@
   text-decoration: none;
   color: black;
 }
-* body.animIndex {
-  opacity: 0;
-  -webkit-animation: headerAnim ease-in-out 8s forwards;
-          animation: headerAnim ease-in-out 8s forwards;
+
+.animLoader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: white;
+  -webkit-animation: loader 8s ease-in-out forwards;
+          animation: loader 8s ease-in-out forwards;
+  z-index: 100;
 }
-@-webkit-keyframes headerAnim {
+@-webkit-keyframes loader {
   to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
+    -webkit-transform: translateY();
+            transform: translateY();
+    background: none;
+    position: relative;
   }
 }
-@keyframes headerAnim {
+@keyframes loader {
   to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
+    -webkit-transform: translateY();
+            transform: translateY();
+    background: none;
+    position: relative;
   }
 }
-* .loader {
-  overflow: hidden;
+.animLoader .loader {
   width: 50%;
   height: 50%;
-  position: absolute;
-  top: 0;
+  top: 25%;
   left: 50%;
+  position: absolute;
+  z-index: 150;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   padding-top: 20px;
@@ -52,13 +59,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  z-index: 100000;
   -webkit-animation: stop ease-in-out 3s forwards;
           animation: stop ease-in-out 3s forwards;
 }
 @media screen and (max-width: 1400px) {
-  * .loader {
-    top: -180px;
+  .animLoader .loader {
+    top: -10px;
   }
 }
 @-webkit-keyframes stop {
@@ -71,23 +77,23 @@
     display: none;
   }
 }
-* .loader__element {
+.animLoader .loaderElement {
   border-radius: 100%;
   margin: 30px;
 }
-* .loader__element:nth-child(1) {
-  -webkit-animation: preloader 0.6s ease-in-out alternate infinite;
-          animation: preloader 0.6s ease-in-out alternate infinite;
+.animLoader .loaderElement:nth-child(1) {
+  -webkit-animation: preloader 0.6s ease-in-out infinite;
+          animation: preloader 0.6s ease-in-out infinite;
   border: 6px solid rgb(153, 226, 208);
 }
-* .loader__element:nth-child(2) {
-  -webkit-animation: preloader 0.6s ease-in-out alternate 0.2s infinite;
-          animation: preloader 0.6s ease-in-out alternate 0.2s infinite;
+.animLoader .loaderElement:nth-child(2) {
+  -webkit-animation: preloader 0.8s ease-in-out infinite;
+          animation: preloader 0.8s ease-in-out infinite;
   border: 6px solid rgb(0, 135, 102);
 }
-* .loader__element:nth-child(3) {
-  -webkit-animation: preloader 0.6s ease-in-out alternate 0.4s infinite;
-          animation: preloader 0.6s ease-in-out alternate 0.4s infinite;
+.animLoader .loaderElement:nth-child(3) {
+  -webkit-animation: preloader 1s ease-in-out infinite;
+          animation: preloader 1s ease-in-out infinite;
   border: 6px solid rgb(147, 86, 220);
 }
 @-webkit-keyframes preloader {
@@ -162,14 +168,14 @@ header .location h2 {
   background: rgb(246, 246, 246);
   padding: 40px 0;
 }
-.section1 h2 {
+.section1 h1 {
   width: 246px;
   margin: 0 auto;
   font-weight: 900;
   font-size: calc(22px + 0.95vw);
 }
 @media screen and (min-width: 1400px) {
-  .section1 h2 {
+  .section1 h1 {
     width: 100%;
   }
 }
@@ -717,6 +723,53 @@ section.background .titleMenu .fa-solid:hover {
 .buttonMenu button.discoverMenu:hover {
   -webkit-filter: brightness(1.1);
           filter: brightness(1.1);
+}
+
+.animEntree {
+  -webkit-animation: apparition 1s ease-in-out forwards;
+          animation: apparition 1s ease-in-out forwards;
+}
+@-webkit-keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animPlat {
+  -webkit-animation: apparition 2s ease-in-out forwards;
+          animation: apparition 2s ease-in-out forwards;
+}
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animDessert {
+  -webkit-animation: apparition 3s ease-in-out forwards;
+          animation: apparition 3s ease-in-out forwards;
+}
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 section.backgroundNote {
