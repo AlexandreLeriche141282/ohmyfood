@@ -130,6 +130,7 @@ section.background{
                      }
                      i{
                         transform: rotate(360deg);
+                        color: #99e2d0;
                      }
                 }
                 
@@ -228,7 +229,7 @@ section.background{
     
     }
     
-    //*********** Animation appartition **************/
+    //*********** Animation appartition menu**************/
     .animEntree{
         animation: apparition 1s ease-in-out forwards;
       @keyframes apparition {
