@@ -14,11 +14,11 @@
 }
 
 .animLoader{
-      // position: fixed;
+      position: fixed;
       width: 100%;
       height: 100%;
       background: white;
-      animation:loader 3s ease-in-out forwards;
+      animation:loader 6s ease-in-out forwards;
       z-index: 100;
       
       @keyframes loader {
