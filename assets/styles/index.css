@@ -397,9 +397,9 @@ header .location h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 @media screen and (max-width: 1200px) {
   .section2 .choice {
@@ -409,16 +409,12 @@ header .location h2 {
             justify-content: flex-start;
   }
 }
-.section2 .choice a {
-  text-align: center;
-  padding: 0 20px;
-}
 .section2 .choice i {
   font-size: 20px;
 }
 @media screen and (max-width: 1200px) {
   .section2 .choice i {
-    padding-left: 25px;
+    padding: 0 25px;
   }
 }
 .section2 h2 {

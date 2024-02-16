@@ -39,21 +39,16 @@
     font-weight: 900;
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: space-evenly;
         @media screen and (max-width:1200px) {
             width: 80%;
             justify-content: flex-start;
         }
-    
-    a{
-        text-align: center;
-        padding: 0 20px;
-    }
 
     i{
         font-size: 20px;
         @media screen and (max-width:1200px) {
-            padding-left: 25px;
+            padding: 0 25px;
         }
     }
 }  
