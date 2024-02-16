@@ -10,10 +10,11 @@ header{
             font-size: 20px;
         }
        img{
-        width: 200px;
+        width: 163px;
         margin: 25px auto 15px;
         @media screen and (min-width:1400px) {
             margin: 30px auto 30px;
+            width: 200px;
         }
        } 
     }

@@ -10,7 +10,7 @@ section.background{
 
     .titleMenu {
         display: flex;
-        justify-content:space-around;
+        justify-content:center;
         border-radius: 40px 40px 0 0;
         background: rgb(246,246,246);
         padding-top: 30px;
@@ -29,13 +29,13 @@ section.background{
        h1{
         font-family: 'Shrikhand' ,sans-serif;
         font-weight: 200;
-        font-size: 29px;
+        font-size: 25px;
+        padding-right: 15px;
        } 
        i{
         font-size: 25px;
         position: absolute;
-        right: 30px;
-        padding-top: 10px;
+        padding-top: 5px;
 
         @media screen and (min-width:1400px) {
             right: 320px;
@@ -75,8 +75,6 @@ section.background{
         width: 95%;
         margin: 0 auto;
 
-        
-        
 
         @media screen and (min-width:1400px) {
             width: 640px;
@@ -97,7 +95,7 @@ section.background{
             
         }
         .entree{
-                height: 70px;
+                height: 90px;
                 background: white;
                 display: flex;
                 justify-content: space-between;
@@ -122,9 +120,9 @@ section.background{
                         text-overflow: ellipsis; 
                          white-space: nowrap;
                          overflow: hidden;
-                         max-width: 250px;
+                         max-width: 90px;
                     
-                         @media screen and (min-width:1400px) {
+                         @media screen and (min-width:400px) {
                             max-width: 400px;
                          }
                      }
@@ -164,20 +162,12 @@ section.background{
                 }
 
                 }
-                
-                    
-                
                 .entreeTxt{
                     padding-left: 15px;
                     width: 100%;
-                    
-                        
-                        
-                        
-                    
                      span{
                         font-weight: 900;
-                        font-size: 19px;
+                        font-size: 15px;
                         line-height: 30px;
                         
                     }
@@ -194,8 +184,7 @@ section.background{
                 }
                 
             }
-
-    }
+        }
         
     }
     .buttonMenu{
@@ -264,6 +253,5 @@ section.background{
           }
       }  
       }
-
 
 

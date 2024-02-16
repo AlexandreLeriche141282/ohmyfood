@@ -10,7 +10,7 @@ section.backgroundDelice{
 
     .titleMenu {
         display: flex;
-        justify-content:space-around;
+        justify-content:center;
         border-radius: 40px 40px 0 0;
         background: rgb(246,246,246);
         padding-top: 30px;
@@ -20,22 +20,26 @@ section.backgroundDelice{
         margin: 0;
 
         @media screen and (min-width:1400px) {
-            left: 50%;
-            transform: translate(-50%, 50%);
-            width: 1050px;
-                
-            }
+        left: 50%;
+        transform: translate(-50%, 50%);
+        width: 1050px;
+        justify-content: center;
             
+        }
        h1{
         font-family: 'Shrikhand' ,sans-serif;
         font-weight: 200;
-        font-size: 29px;
+        font-size: 25px;
+        padding-right: 15px;
        } 
        i{
         font-size: 25px;
         position: absolute;
-        right: 30px;
-        padding-top: 10px;
+        padding-top: 5px;
+
+        @media screen and (min-width:1400px) {
+            right: 320px;
+        }
         
     }
     .fa-solid{
@@ -53,4 +57,199 @@ section.backgroundDelice{
         }
     } 
 }
+    }
+    
+
+
+    .containerMenu{
+                background: rgb(246,246,246);
+                padding-bottom: 10px;
+                padding-top: 30px;
+
+                @media screen and (min-width:1400px) {
+                    width: 1050px;
+                    margin: 0 auto;
+                }
+       
+    section.entrees{
+        width: 95%;
+        margin: 0 auto;
+
+
+        @media screen and (min-width:1400px) {
+            width: 640px;
+        }
+
+        h2{
+            text-transform: uppercase;
+            font-size: 18px;
+            color: rgb(123,123,123);
+            font-weight: 200;
+            padding-top: 30px;
+            &:after{
+                content:"";
+                border-bottom:solid 3px rgb(153,226,208);
+                display: block;
+                width: 45px;
+            }
+            
+        }
+        .entree{
+                height: 90px;
+                background: white;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 10px 0;
+                border-radius: 15px;
+                overflow: hidden;
+                -webkit-box-shadow: 2px 2px 15px 5px rgba(196, 184, 184, 0.507); 
+                box-shadow: 2px 2px 15px 5px rgba(54, 54, 54, 0.129);
+                position: relative; 
+                &:hover{
+                    
+                    .animation{
+                        transform: translateX(0);
+                        visibility: visible;
+                        
+                    }
+                    .price{
+                        transform: translateX(-100%);
+                    }
+                    .entreeTxt p{
+                        text-overflow: ellipsis; 
+                         white-space: nowrap;
+                         overflow: hidden;
+                         max-width: 90px;
+                    
+                         @media screen and (min-width:400px) {
+                            max-width: 400px;
+                         }
+                     }
+                     i{
+                        transform: rotate(360deg);
+                        color: #99e2d0;
+                     }
+                }
+                
+                .animation{
+                    background:rgb(153,226,208) ;
+                    height: 100%;
+                    width: 60px;
+                    position: absolute;
+                    right: 0;
+                    border-radius: 0 15px 15px 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transform: translateX(100%);
+                    visibility: hidden;
+                    transition:ease 0.4s;
+                    
+                }
+                i {
+                    border-radius: 50%;
+                    background: white;
+                    width: 20px;
+                    height: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: 0.4s;
+                    
+                    &:after{
+                    content:"";
+                }
+
+                }
+                .entreeTxt{
+                    padding-left: 15px;
+                    width: 100%;
+                     span{
+                        font-weight: 900;
+                        font-size: 15px;
+                        line-height: 30px;
+                        
+                    }
+                    
+                }
+                .price{
+                    padding-right: 20px;
+                    padding-top: 40px;
+                    font-weight: 600;
+                    letter-spacing: 0.5px;
+                    height: 100%;
+                    transition:ease 0.4s;
+                    
+                }
+                
+            }
+        }
+        
+    }
+    .buttonMenu{
+        display: flex;
+        justify-content: center;
+        background: rgb(246,246,246);
+        padding: 20px;
+        @media screen and (min-width:1400px) {
+            width: 1050px;
+            margin: 0 auto;
+        }
+        button.discoverMenu{
+        width: 190px;
+        height: 50px;
+        border-radius: 40px;
+        margin-bottom: 20px;
+        color: white;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        background: rgb(147,86,220);
+        background: linear-gradient(6deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%, rgba(153,226,208,1) 100%);
+        transition: 0.5s;
+        -webkit-box-shadow: 2px 2px 15px 5px rgba(54,54,54,0.66); 
+        box-shadow: 2px 2px 15px 5px rgba(54, 54, 54, 0.263);
+        
+        &:hover{
+        filter: brightness(1.1); 
+    }
+    }
+    
+    }
+    
+    //*********** Animation appartition menu**************/
+    .animEntree{
+        animation: apparition 1s ease-in-out forwards;
+      @keyframes apparition {
+          0%{
+              opacity: 0;
+          }
+          100%{
+              opacity: 1;
+          }
+      }  
+      }
+    .animPlat{
+        animation: apparition 2s ease-in-out forwards;
+      @keyframes apparition {
+          0%{
+              opacity: 0;
+          }
+          100%{
+              opacity: 1;
+          }
+      }  
+      }
+
+    .animDessert{
+        animation: apparition 3s ease-in-out forwards;
+      @keyframes apparition {
+          0%{
+              opacity: 0;
+          }
+          100%{
+              opacity: 1;
+          }
+      }  
     }

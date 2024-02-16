@@ -195,37 +195,31 @@
     top: 32px;
     right: 0;
     border-radius: 0 5px 14px 0;
-    rotate: 0deg;
   }
   34% {
     top: 32px;
     right: 0;
     border-radius: 0 5px 14px 0;
-    rotate: 0deg;
   }
   43% {
     top: 30px;
     right: 2px;
     border-radius: 0 8px 20px 0;
-    rotate: -12deg;
   }
   50% {
     top: 30px;
     right: 2px;
     border-radius: 0 8px 20px 0;
-    rotate: -12deg;
   }
   60% {
     top: 32px;
     right: 0;
     border-radius: 0 5px 14px 0;
-    rotate: 0deg;
   }
   100% {
     top: 32px;
     right: 0;
     border-radius: 0 5px 14px 0;
-    rotate: 0deg;
   }
 }
 @keyframes rotateHand5 {
@@ -233,37 +227,31 @@
     top: 32px;
     right: 0;
     border-radius: 0 5px 14px 0;
-    rotate: 0deg;
   }
   34% {
     top: 32px;
     right: 0;
     border-radius: 0 5px 14px 0;
-    rotate: 0deg;
   }
   43% {
     top: 30px;
     right: 2px;
     border-radius: 0 8px 20px 0;
-    rotate: -12deg;
   }
   50% {
     top: 30px;
     right: 2px;
     border-radius: 0 8px 20px 0;
-    rotate: -12deg;
   }
   60% {
     top: 32px;
     right: 0;
     border-radius: 0 5px 14px 0;
-    rotate: 0deg;
   }
   100% {
     top: 32px;
     right: 0;
     border-radius: 0 5px 14px 0;
-    rotate: 0deg;
   }
 }
 
@@ -281,12 +269,13 @@ header .title i {
   font-size: 20px;
 }
 header .title img {
-  width: 200px;
+  width: 163px;
   margin: 25px auto 15px;
 }
 @media screen and (min-width: 1400px) {
   header .title img {
     margin: 30px auto 30px;
+    width: 200px;
   }
 }
 header .location {
@@ -327,15 +316,9 @@ header .location h2 {
   padding: 40px 0;
 }
 .section1 h1 {
-  width: 246px;
   margin: 0 auto;
   font-weight: 900;
   font-size: calc(22px + 0.95vw);
-}
-@media screen and (min-width: 1400px) {
-  .section1 h1 {
-    width: 100%;
-  }
 }
 .section1 h3 {
   font-weight: 100;
@@ -363,33 +346,44 @@ header .location h2 {
           filter: brightness(1.1);
 }
 
-.section2 .buttonContainer {
+.section2 .button .buttonContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 20px;
 }
-@media screen and (min-width: 1400px) {
-  .section2 .buttonContainer {
+.section2 .button h2 {
+  width: 80%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1200px) {
+  .section2 .button {
+    margin: 0 auto;
+    width: 1100px;
+  }
+  .section2 .button .buttonContainer {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin: 0 auto;
-    width: 1100px;
-    gap: 30px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .section2 .button h2 {
+    width: 100%;
   }
 }
-.section2 .buttonContainer .choice {
+.section2 .choice {
   position: relative;
-  width: 330px;
+  width: 320px;
   height: 70px;
   border-radius: 20px;
   border: none;
@@ -403,23 +397,37 @@ header .location h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.section2 .buttonContainer .choice p {
-  width: 186px;
-  text-align: left;
+@media screen and (max-width: 1200px) {
+  .section2 .choice {
+    width: 80%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
-.section2 .buttonContainer .choice i {
+.section2 .choice a {
+  text-align: center;
+  padding: 0 20px;
+}
+.section2 .choice i {
   font-size: 20px;
 }
+@media screen and (max-width: 1200px) {
+  .section2 .choice i {
+    padding-left: 25px;
+  }
+}
 .section2 h2 {
-  padding: 50px 25px 30px;
+  padding: 50px 0 30px;
+  margin: 0;
 }
 @media screen and (min-width: 1400px) {
   .section2 h2 {
-    padding-left: 370px;
+    width: 1100px;
   }
 }
 .section2 span {
@@ -455,7 +463,7 @@ header .location h2 {
   margin-top: 50px;
   padding-top: 60px;
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1200px) {
   .section3 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -467,7 +475,7 @@ header .location h2 {
   width: 90%;
   margin: 0 auto;
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1200px) {
   .section3 h2 {
     width: 1050px;
   }
@@ -665,8 +673,9 @@ section.background .titleMenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 40px 40px 0 0;
   background: rgb(246, 246, 246);
   padding-top: 30px;
@@ -689,13 +698,13 @@ section.background .titleMenu {
 section.background .titleMenu h1 {
   font-family: "Shrikhand", sans-serif;
   font-weight: 200;
-  font-size: 29px;
+  font-size: 25px;
+  padding-right: 15px;
 }
 section.background .titleMenu i {
   font-size: 25px;
   position: absolute;
-  right: 30px;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 @media screen and (min-width: 1400px) {
   section.background .titleMenu i {
@@ -749,7 +758,7 @@ section.background .titleMenu .fa-solid:hover {
   width: 45px;
 }
 .containerMenu section.entrees .entree {
-  height: 70px;
+  height: 90px;
   background: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -780,9 +789,9 @@ section.background .titleMenu .fa-solid:hover {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  max-width: 250px;
+  max-width: 90px;
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 400px) {
   .containerMenu section.entrees .entree:hover .entreeTxt p {
     max-width: 400px;
   }
@@ -840,7 +849,7 @@ section.background .titleMenu .fa-solid:hover {
 }
 .containerMenu section.entrees .entree .entreeTxt span {
   font-weight: 900;
-  font-size: 19px;
+  font-size: 15px;
   line-height: 30px;
 }
 .containerMenu section.entrees .entree .price {
@@ -952,8 +961,9 @@ section.backgroundNote .titleMenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 40px 40px 0 0;
   background: rgb(246, 246, 246);
   padding-top: 30px;
@@ -968,18 +978,26 @@ section.backgroundNote .titleMenu {
     -webkit-transform: translate(-50%, 50%);
             transform: translate(-50%, 50%);
     width: 1050px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 section.backgroundNote .titleMenu h1 {
   font-family: "Shrikhand", sans-serif;
   font-weight: 200;
-  font-size: 29px;
+  font-size: 25px;
+  padding-right: 15px;
 }
 section.backgroundNote .titleMenu i {
   font-size: 25px;
   position: absolute;
-  right: 30px;
-  padding-top: 10px;
+  padding-top: 5px;
+}
+@media screen and (min-width: 1400px) {
+  section.backgroundNote .titleMenu i {
+    right: 320px;
+  }
 }
 section.backgroundNote .titleMenu .fa-solid {
   opacity: 0;
@@ -992,6 +1010,220 @@ section.backgroundNote .titleMenu .fa-solid:hover {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   background-image: linear-gradient(6deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%, rgb(153, 226, 208) 100%);
+}
+
+.containerMenu {
+  background: rgb(246, 246, 246);
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+@media screen and (min-width: 1400px) {
+  .containerMenu {
+    width: 1050px;
+    margin: 0 auto;
+  }
+}
+.containerMenu section.entrees {
+  width: 95%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1400px) {
+  .containerMenu section.entrees {
+    width: 640px;
+  }
+}
+.containerMenu section.entrees h2 {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: rgb(123, 123, 123);
+  font-weight: 200;
+  padding-top: 30px;
+}
+.containerMenu section.entrees h2:after {
+  content: "";
+  border-bottom: solid 3px rgb(153, 226, 208);
+  display: block;
+  width: 45px;
+}
+.containerMenu section.entrees .entree {
+  height: 90px;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+  border-radius: 15px;
+  overflow: hidden;
+  -webkit-box-shadow: 2px 2px 15px 5px rgba(196, 184, 184, 0.507);
+  box-shadow: 2px 2px 15px 5px rgba(54, 54, 54, 0.129);
+  position: relative;
+}
+.containerMenu section.entrees .entree:hover .animation {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  visibility: visible;
+}
+.containerMenu section.entrees .entree:hover .price {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+.containerMenu section.entrees .entree:hover .entreeTxt p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 90px;
+}
+@media screen and (min-width: 400px) {
+  .containerMenu section.entrees .entree:hover .entreeTxt p {
+    max-width: 400px;
+  }
+}
+.containerMenu section.entrees .entree:hover i {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  color: #99e2d0;
+}
+.containerMenu section.entrees .entree .animation {
+  background: rgb(153, 226, 208);
+  height: 100%;
+  width: 60px;
+  position: absolute;
+  right: 0;
+  border-radius: 0 15px 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  visibility: hidden;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+}
+.containerMenu section.entrees .entree i {
+  border-radius: 50%;
+  background: white;
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.containerMenu section.entrees .entree i:after {
+  content: "";
+}
+.containerMenu section.entrees .entree .entreeTxt {
+  padding-left: 15px;
+  width: 100%;
+}
+.containerMenu section.entrees .entree .entreeTxt span {
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 30px;
+}
+.containerMenu section.entrees .entree .price {
+  padding-right: 20px;
+  padding-top: 40px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  height: 100%;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+}
+
+.buttonMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgb(246, 246, 246);
+  padding: 20px;
+}
+@media screen and (min-width: 1400px) {
+  .buttonMenu {
+    width: 1050px;
+    margin: 0 auto;
+  }
+}
+.buttonMenu button.discoverMenu {
+  width: 190px;
+  height: 50px;
+  border-radius: 40px;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background: rgb(147, 86, 220);
+  background: linear-gradient(6deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%, rgb(153, 226, 208) 100%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: 2px 2px 15px 5px rgba(54, 54, 54, 0.66);
+  box-shadow: 2px 2px 15px 5px rgba(54, 54, 54, 0.263);
+}
+.buttonMenu button.discoverMenu:hover {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+}
+
+.animEntree {
+  -webkit-animation: apparition 1s ease-in-out forwards;
+          animation: apparition 1s ease-in-out forwards;
+}
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animPlat {
+  -webkit-animation: apparition 2s ease-in-out forwards;
+          animation: apparition 2s ease-in-out forwards;
+}
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animDessert {
+  -webkit-animation: apparition 3s ease-in-out forwards;
+          animation: apparition 3s ease-in-out forwards;
+}
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 section.backgroundFrançaise {
@@ -1009,8 +1241,9 @@ section.backgroundFrançaise .titleMenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 40px 40px 0 0;
   background: rgb(246, 246, 246);
   padding-top: 30px;
@@ -1025,18 +1258,26 @@ section.backgroundFrançaise .titleMenu {
     -webkit-transform: translate(-50%, 50%);
             transform: translate(-50%, 50%);
     width: 1050px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 section.backgroundFrançaise .titleMenu h1 {
   font-family: "Shrikhand", sans-serif;
   font-weight: 200;
-  font-size: 29px;
+  font-size: 25px;
+  padding-right: 15px;
 }
 section.backgroundFrançaise .titleMenu i {
   font-size: 25px;
   position: absolute;
-  right: 30px;
-  padding-top: 10px;
+  padding-top: 5px;
+}
+@media screen and (min-width: 1400px) {
+  section.backgroundFrançaise .titleMenu i {
+    right: 320px;
+  }
 }
 section.backgroundFrançaise .titleMenu .fa-solid {
   opacity: 0;
@@ -1049,6 +1290,220 @@ section.backgroundFrançaise .titleMenu .fa-solid:hover {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   background-image: linear-gradient(6deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%, rgb(153, 226, 208) 100%);
+}
+
+.containerMenu {
+  background: rgb(246, 246, 246);
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+@media screen and (min-width: 1400px) {
+  .containerMenu {
+    width: 1050px;
+    margin: 0 auto;
+  }
+}
+.containerMenu section.entrees {
+  width: 95%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1400px) {
+  .containerMenu section.entrees {
+    width: 640px;
+  }
+}
+.containerMenu section.entrees h2 {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: rgb(123, 123, 123);
+  font-weight: 200;
+  padding-top: 30px;
+}
+.containerMenu section.entrees h2:after {
+  content: "";
+  border-bottom: solid 3px rgb(153, 226, 208);
+  display: block;
+  width: 45px;
+}
+.containerMenu section.entrees .entree {
+  height: 90px;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+  border-radius: 15px;
+  overflow: hidden;
+  -webkit-box-shadow: 2px 2px 15px 5px rgba(196, 184, 184, 0.507);
+  box-shadow: 2px 2px 15px 5px rgba(54, 54, 54, 0.129);
+  position: relative;
+}
+.containerMenu section.entrees .entree:hover .animation {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  visibility: visible;
+}
+.containerMenu section.entrees .entree:hover .price {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+.containerMenu section.entrees .entree:hover .entreeTxt p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 90px;
+}
+@media screen and (min-width: 400px) {
+  .containerMenu section.entrees .entree:hover .entreeTxt p {
+    max-width: 400px;
+  }
+}
+.containerMenu section.entrees .entree:hover i {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  color: #99e2d0;
+}
+.containerMenu section.entrees .entree .animation {
+  background: rgb(153, 226, 208);
+  height: 100%;
+  width: 60px;
+  position: absolute;
+  right: 0;
+  border-radius: 0 15px 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  visibility: hidden;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+}
+.containerMenu section.entrees .entree i {
+  border-radius: 50%;
+  background: white;
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.containerMenu section.entrees .entree i:after {
+  content: "";
+}
+.containerMenu section.entrees .entree .entreeTxt {
+  padding-left: 15px;
+  width: 100%;
+}
+.containerMenu section.entrees .entree .entreeTxt span {
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 30px;
+}
+.containerMenu section.entrees .entree .price {
+  padding-right: 20px;
+  padding-top: 40px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  height: 100%;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+}
+
+.buttonMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgb(246, 246, 246);
+  padding: 20px;
+}
+@media screen and (min-width: 1400px) {
+  .buttonMenu {
+    width: 1050px;
+    margin: 0 auto;
+  }
+}
+.buttonMenu button.discoverMenu {
+  width: 190px;
+  height: 50px;
+  border-radius: 40px;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background: rgb(147, 86, 220);
+  background: linear-gradient(6deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%, rgb(153, 226, 208) 100%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: 2px 2px 15px 5px rgba(54, 54, 54, 0.66);
+  box-shadow: 2px 2px 15px 5px rgba(54, 54, 54, 0.263);
+}
+.buttonMenu button.discoverMenu:hover {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+}
+
+.animEntree {
+  -webkit-animation: apparition 1s ease-in-out forwards;
+          animation: apparition 1s ease-in-out forwards;
+}
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animPlat {
+  -webkit-animation: apparition 2s ease-in-out forwards;
+          animation: apparition 2s ease-in-out forwards;
+}
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animDessert {
+  -webkit-animation: apparition 3s ease-in-out forwards;
+          animation: apparition 3s ease-in-out forwards;
+}
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 section.backgroundDelice {
@@ -1066,8 +1521,9 @@ section.backgroundDelice .titleMenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 40px 40px 0 0;
   background: rgb(246, 246, 246);
   padding-top: 30px;
@@ -1082,18 +1538,26 @@ section.backgroundDelice .titleMenu {
     -webkit-transform: translate(-50%, 50%);
             transform: translate(-50%, 50%);
     width: 1050px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 section.backgroundDelice .titleMenu h1 {
   font-family: "Shrikhand", sans-serif;
   font-weight: 200;
-  font-size: 29px;
+  font-size: 25px;
+  padding-right: 15px;
 }
 section.backgroundDelice .titleMenu i {
   font-size: 25px;
   position: absolute;
-  right: 30px;
-  padding-top: 10px;
+  padding-top: 5px;
+}
+@media screen and (min-width: 1400px) {
+  section.backgroundDelice .titleMenu i {
+    right: 320px;
+  }
 }
 section.backgroundDelice .titleMenu .fa-solid {
   opacity: 0;
@@ -1106,4 +1570,218 @@ section.backgroundDelice .titleMenu .fa-solid:hover {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   background-image: linear-gradient(6deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%, rgb(153, 226, 208) 100%);
+}
+
+.containerMenu {
+  background: rgb(246, 246, 246);
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+@media screen and (min-width: 1400px) {
+  .containerMenu {
+    width: 1050px;
+    margin: 0 auto;
+  }
+}
+.containerMenu section.entrees {
+  width: 95%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1400px) {
+  .containerMenu section.entrees {
+    width: 640px;
+  }
+}
+.containerMenu section.entrees h2 {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: rgb(123, 123, 123);
+  font-weight: 200;
+  padding-top: 30px;
+}
+.containerMenu section.entrees h2:after {
+  content: "";
+  border-bottom: solid 3px rgb(153, 226, 208);
+  display: block;
+  width: 45px;
+}
+.containerMenu section.entrees .entree {
+  height: 90px;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+  border-radius: 15px;
+  overflow: hidden;
+  -webkit-box-shadow: 2px 2px 15px 5px rgba(196, 184, 184, 0.507);
+  box-shadow: 2px 2px 15px 5px rgba(54, 54, 54, 0.129);
+  position: relative;
+}
+.containerMenu section.entrees .entree:hover .animation {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  visibility: visible;
+}
+.containerMenu section.entrees .entree:hover .price {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+.containerMenu section.entrees .entree:hover .entreeTxt p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 90px;
+}
+@media screen and (min-width: 400px) {
+  .containerMenu section.entrees .entree:hover .entreeTxt p {
+    max-width: 400px;
+  }
+}
+.containerMenu section.entrees .entree:hover i {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  color: #99e2d0;
+}
+.containerMenu section.entrees .entree .animation {
+  background: rgb(153, 226, 208);
+  height: 100%;
+  width: 60px;
+  position: absolute;
+  right: 0;
+  border-radius: 0 15px 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  visibility: hidden;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+}
+.containerMenu section.entrees .entree i {
+  border-radius: 50%;
+  background: white;
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.containerMenu section.entrees .entree i:after {
+  content: "";
+}
+.containerMenu section.entrees .entree .entreeTxt {
+  padding-left: 15px;
+  width: 100%;
+}
+.containerMenu section.entrees .entree .entreeTxt span {
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 30px;
+}
+.containerMenu section.entrees .entree .price {
+  padding-right: 20px;
+  padding-top: 40px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  height: 100%;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+}
+
+.buttonMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgb(246, 246, 246);
+  padding: 20px;
+}
+@media screen and (min-width: 1400px) {
+  .buttonMenu {
+    width: 1050px;
+    margin: 0 auto;
+  }
+}
+.buttonMenu button.discoverMenu {
+  width: 190px;
+  height: 50px;
+  border-radius: 40px;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background: rgb(147, 86, 220);
+  background: linear-gradient(6deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%, rgb(153, 226, 208) 100%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: 2px 2px 15px 5px rgba(54, 54, 54, 0.66);
+  box-shadow: 2px 2px 15px 5px rgba(54, 54, 54, 0.263);
+}
+.buttonMenu button.discoverMenu:hover {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+}
+
+.animEntree {
+  -webkit-animation: apparition 1s ease-in-out forwards;
+          animation: apparition 1s ease-in-out forwards;
+}
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animPlat {
+  -webkit-animation: apparition 2s ease-in-out forwards;
+          animation: apparition 2s ease-in-out forwards;
+}
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animDessert {
+  -webkit-animation: apparition 3s ease-in-out forwards;
+          animation: apparition 3s ease-in-out forwards;
+}
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=index.css.map */

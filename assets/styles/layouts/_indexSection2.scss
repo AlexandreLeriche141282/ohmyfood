@@ -1,20 +1,35 @@
 .section2{
-    .buttonContainer{
-       display: flex;
-       align-items: center;
-        flex-direction: column;
-        gap: 20px;
-        @media screen and (min-width:1400px){
-        flex-direction: row;
-        margin: 0 auto;
-        width: 1100px;
-        gap: 30px;
+    .button{
+        .buttonContainer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            }
 
+           h2{
+        width: 80%;
+        margin: 0 auto;
+        } 
+
+        @media screen and (min-width:1200px){
+        margin: 0 auto;
+        width: 1100px; 
+
+          .buttonContainer{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        h2{
+            width: 100%;
+        }
         
+        }    
     }
       .choice{
-        position: relative;
-    width: 330px;
+    position: relative;
+    width: 320px;
     height: 70px;
     border-radius: 20px;
     border: none;
@@ -24,25 +39,32 @@
     font-weight: 900;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-
+    justify-content:center;
+        @media screen and (max-width:1200px) {
+            width: 80%;
+            justify-content: flex-start;
+        }
     
-    p{
-        width: 186px;
-        text-align: left;
+    a{
+        text-align: center;
+        padding: 0 20px;
     }
 
     i{
         font-size: 20px;
-        
+        @media screen and (max-width:1200px) {
+            padding-left: 25px;
+        }
     }
 }  
-    }
+
 
 h2{
-padding: 50px 25px 30px; 
+padding: 50px 0 30px; 
+margin: 0;
+
 @media screen and (min-width:1400px) {
-    padding-left: 370px;
+    width: 1100px;
 }   
 }
 
