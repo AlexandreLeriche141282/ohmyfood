@@ -669,12 +669,13 @@ section.background .titleMenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   border-radius: 40px 40px 0 0;
   background: rgb(246, 246, 246);
   padding-top: 30px;
+  padding-left: 15px;
   position: absolute;
   width: 100%;
   bottom: -1px;
@@ -694,7 +695,7 @@ section.background .titleMenu {
 section.background .titleMenu h1 {
   font-family: "Shrikhand", sans-serif;
   font-weight: 200;
-  font-size: 25px;
+  font-size: 26px;
   padding-right: 15px;
 }
 section.background .titleMenu i {
@@ -723,12 +724,12 @@ section.background .titleMenu .fa-solid:hover {
 .containerMenu {
   background: rgb(246, 246, 246);
   padding-bottom: 10px;
-  padding-top: 30px;
 }
 @media screen and (min-width: 1400px) {
   .containerMenu {
     width: 1050px;
     margin: 0 auto;
+    padding-top: 50px;
   }
 }
 .containerMenu section.entrees {
@@ -754,8 +755,8 @@ section.background .titleMenu .fa-solid:hover {
   width: 45px;
 }
 .containerMenu section.entrees .entree {
-  height: 90px;
-  background: white;
+  height: 75px;
+  background: rgb(255, 255, 255);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -957,12 +958,13 @@ section.backgroundNote .titleMenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   border-radius: 40px 40px 0 0;
   background: rgb(246, 246, 246);
   padding-top: 30px;
+  padding-left: 15px;
   position: absolute;
   width: 100%;
   bottom: -1px;
@@ -1008,220 +1010,6 @@ section.backgroundNote .titleMenu .fa-solid:hover {
   background-image: linear-gradient(6deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%, rgb(153, 226, 208) 100%);
 }
 
-.containerMenu {
-  background: rgb(246, 246, 246);
-  padding-bottom: 10px;
-  padding-top: 30px;
-}
-@media screen and (min-width: 1400px) {
-  .containerMenu {
-    width: 1050px;
-    margin: 0 auto;
-  }
-}
-.containerMenu section.entrees {
-  width: 95%;
-  margin: 0 auto;
-}
-@media screen and (min-width: 1400px) {
-  .containerMenu section.entrees {
-    width: 640px;
-  }
-}
-.containerMenu section.entrees h2 {
-  text-transform: uppercase;
-  font-size: 18px;
-  color: rgb(123, 123, 123);
-  font-weight: 200;
-  padding-top: 30px;
-}
-.containerMenu section.entrees h2:after {
-  content: "";
-  border-bottom: solid 3px rgb(153, 226, 208);
-  display: block;
-  width: 45px;
-}
-.containerMenu section.entrees .entree {
-  height: 90px;
-  background: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 10px 0;
-  border-radius: 15px;
-  overflow: hidden;
-  -webkit-box-shadow: 2px 2px 15px 5px rgba(196, 184, 184, 0.507);
-  box-shadow: 2px 2px 15px 5px rgba(54, 54, 54, 0.129);
-  position: relative;
-}
-.containerMenu section.entrees .entree:hover .animation {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  visibility: visible;
-}
-.containerMenu section.entrees .entree:hover .price {
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
-}
-.containerMenu section.entrees .entree:hover .entreeTxt p {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  max-width: 90px;
-}
-@media screen and (min-width: 400px) {
-  .containerMenu section.entrees .entree:hover .entreeTxt p {
-    max-width: 400px;
-  }
-}
-.containerMenu section.entrees .entree:hover i {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  color: #99e2d0;
-}
-.containerMenu section.entrees .entree .animation {
-  background: rgb(153, 226, 208);
-  height: 100%;
-  width: 60px;
-  position: absolute;
-  right: 0;
-  border-radius: 0 15px 15px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  visibility: hidden;
-  -webkit-transition: ease 0.4s;
-  transition: ease 0.4s;
-}
-.containerMenu section.entrees .entree i {
-  border-radius: 50%;
-  background: white;
-  width: 20px;
-  height: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-.containerMenu section.entrees .entree i:after {
-  content: "";
-}
-.containerMenu section.entrees .entree .entreeTxt {
-  padding-left: 15px;
-  width: 100%;
-}
-.containerMenu section.entrees .entree .entreeTxt span {
-  font-weight: 900;
-  font-size: 15px;
-  line-height: 30px;
-}
-.containerMenu section.entrees .entree .price {
-  padding-right: 20px;
-  padding-top: 40px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  height: 100%;
-  -webkit-transition: ease 0.4s;
-  transition: ease 0.4s;
-}
-
-.buttonMenu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: rgb(246, 246, 246);
-  padding: 20px;
-}
-@media screen and (min-width: 1400px) {
-  .buttonMenu {
-    width: 1050px;
-    margin: 0 auto;
-  }
-}
-.buttonMenu button.discoverMenu {
-  width: 190px;
-  height: 50px;
-  border-radius: 40px;
-  margin-bottom: 20px;
-  color: white;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  background: rgb(147, 86, 220);
-  background: linear-gradient(6deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%, rgb(153, 226, 208) 100%);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  -webkit-box-shadow: 2px 2px 15px 5px rgba(54, 54, 54, 0.66);
-  box-shadow: 2px 2px 15px 5px rgba(54, 54, 54, 0.263);
-}
-.buttonMenu button.discoverMenu:hover {
-  -webkit-filter: brightness(1.1);
-          filter: brightness(1.1);
-}
-
-.animEntree {
-  -webkit-animation: apparition 1s ease-in-out forwards;
-          animation: apparition 1s ease-in-out forwards;
-}
-@keyframes apparition {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.animPlat {
-  -webkit-animation: apparition 2s ease-in-out forwards;
-          animation: apparition 2s ease-in-out forwards;
-}
-@keyframes apparition {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.animDessert {
-  -webkit-animation: apparition 3s ease-in-out forwards;
-          animation: apparition 3s ease-in-out forwards;
-}
-@keyframes apparition {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 section.backgroundFrançaise {
   background: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) center/cover no-repeat;
   background-size: cover;
@@ -1237,12 +1025,13 @@ section.backgroundFrançaise .titleMenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   border-radius: 40px 40px 0 0;
   background: rgb(246, 246, 246);
   padding-top: 30px;
+  padding-left: 15px;
   position: absolute;
   width: 100%;
   bottom: -1px;
@@ -1288,220 +1077,6 @@ section.backgroundFrançaise .titleMenu .fa-solid:hover {
   background-image: linear-gradient(6deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%, rgb(153, 226, 208) 100%);
 }
 
-.containerMenu {
-  background: rgb(246, 246, 246);
-  padding-bottom: 10px;
-  padding-top: 30px;
-}
-@media screen and (min-width: 1400px) {
-  .containerMenu {
-    width: 1050px;
-    margin: 0 auto;
-  }
-}
-.containerMenu section.entrees {
-  width: 95%;
-  margin: 0 auto;
-}
-@media screen and (min-width: 1400px) {
-  .containerMenu section.entrees {
-    width: 640px;
-  }
-}
-.containerMenu section.entrees h2 {
-  text-transform: uppercase;
-  font-size: 18px;
-  color: rgb(123, 123, 123);
-  font-weight: 200;
-  padding-top: 30px;
-}
-.containerMenu section.entrees h2:after {
-  content: "";
-  border-bottom: solid 3px rgb(153, 226, 208);
-  display: block;
-  width: 45px;
-}
-.containerMenu section.entrees .entree {
-  height: 90px;
-  background: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 10px 0;
-  border-radius: 15px;
-  overflow: hidden;
-  -webkit-box-shadow: 2px 2px 15px 5px rgba(196, 184, 184, 0.507);
-  box-shadow: 2px 2px 15px 5px rgba(54, 54, 54, 0.129);
-  position: relative;
-}
-.containerMenu section.entrees .entree:hover .animation {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  visibility: visible;
-}
-.containerMenu section.entrees .entree:hover .price {
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
-}
-.containerMenu section.entrees .entree:hover .entreeTxt p {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  max-width: 90px;
-}
-@media screen and (min-width: 400px) {
-  .containerMenu section.entrees .entree:hover .entreeTxt p {
-    max-width: 400px;
-  }
-}
-.containerMenu section.entrees .entree:hover i {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  color: #99e2d0;
-}
-.containerMenu section.entrees .entree .animation {
-  background: rgb(153, 226, 208);
-  height: 100%;
-  width: 60px;
-  position: absolute;
-  right: 0;
-  border-radius: 0 15px 15px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  visibility: hidden;
-  -webkit-transition: ease 0.4s;
-  transition: ease 0.4s;
-}
-.containerMenu section.entrees .entree i {
-  border-radius: 50%;
-  background: white;
-  width: 20px;
-  height: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-.containerMenu section.entrees .entree i:after {
-  content: "";
-}
-.containerMenu section.entrees .entree .entreeTxt {
-  padding-left: 15px;
-  width: 100%;
-}
-.containerMenu section.entrees .entree .entreeTxt span {
-  font-weight: 900;
-  font-size: 15px;
-  line-height: 30px;
-}
-.containerMenu section.entrees .entree .price {
-  padding-right: 20px;
-  padding-top: 40px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  height: 100%;
-  -webkit-transition: ease 0.4s;
-  transition: ease 0.4s;
-}
-
-.buttonMenu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: rgb(246, 246, 246);
-  padding: 20px;
-}
-@media screen and (min-width: 1400px) {
-  .buttonMenu {
-    width: 1050px;
-    margin: 0 auto;
-  }
-}
-.buttonMenu button.discoverMenu {
-  width: 190px;
-  height: 50px;
-  border-radius: 40px;
-  margin-bottom: 20px;
-  color: white;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  background: rgb(147, 86, 220);
-  background: linear-gradient(6deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%, rgb(153, 226, 208) 100%);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  -webkit-box-shadow: 2px 2px 15px 5px rgba(54, 54, 54, 0.66);
-  box-shadow: 2px 2px 15px 5px rgba(54, 54, 54, 0.263);
-}
-.buttonMenu button.discoverMenu:hover {
-  -webkit-filter: brightness(1.1);
-          filter: brightness(1.1);
-}
-
-.animEntree {
-  -webkit-animation: apparition 1s ease-in-out forwards;
-          animation: apparition 1s ease-in-out forwards;
-}
-@keyframes apparition {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.animPlat {
-  -webkit-animation: apparition 2s ease-in-out forwards;
-          animation: apparition 2s ease-in-out forwards;
-}
-@keyframes apparition {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.animDessert {
-  -webkit-animation: apparition 3s ease-in-out forwards;
-          animation: apparition 3s ease-in-out forwards;
-}
-@keyframes apparition {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 section.backgroundDelice {
   background: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) center/cover no-repeat;
   background-size: cover;
@@ -1517,12 +1092,13 @@ section.backgroundDelice .titleMenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   border-radius: 40px 40px 0 0;
   background: rgb(246, 246, 246);
   padding-top: 30px;
+  padding-left: 15px;
   position: absolute;
   width: 100%;
   bottom: -1px;
@@ -1566,218 +1142,4 @@ section.backgroundDelice .titleMenu .fa-solid:hover {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   background-image: linear-gradient(6deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%, rgb(153, 226, 208) 100%);
-}
-
-.containerMenu {
-  background: rgb(246, 246, 246);
-  padding-bottom: 10px;
-  padding-top: 30px;
-}
-@media screen and (min-width: 1400px) {
-  .containerMenu {
-    width: 1050px;
-    margin: 0 auto;
-  }
-}
-.containerMenu section.entrees {
-  width: 95%;
-  margin: 0 auto;
-}
-@media screen and (min-width: 1400px) {
-  .containerMenu section.entrees {
-    width: 640px;
-  }
-}
-.containerMenu section.entrees h2 {
-  text-transform: uppercase;
-  font-size: 18px;
-  color: rgb(123, 123, 123);
-  font-weight: 200;
-  padding-top: 30px;
-}
-.containerMenu section.entrees h2:after {
-  content: "";
-  border-bottom: solid 3px rgb(153, 226, 208);
-  display: block;
-  width: 45px;
-}
-.containerMenu section.entrees .entree {
-  height: 90px;
-  background: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 10px 0;
-  border-radius: 15px;
-  overflow: hidden;
-  -webkit-box-shadow: 2px 2px 15px 5px rgba(196, 184, 184, 0.507);
-  box-shadow: 2px 2px 15px 5px rgba(54, 54, 54, 0.129);
-  position: relative;
-}
-.containerMenu section.entrees .entree:hover .animation {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  visibility: visible;
-}
-.containerMenu section.entrees .entree:hover .price {
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
-}
-.containerMenu section.entrees .entree:hover .entreeTxt p {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  max-width: 90px;
-}
-@media screen and (min-width: 400px) {
-  .containerMenu section.entrees .entree:hover .entreeTxt p {
-    max-width: 400px;
-  }
-}
-.containerMenu section.entrees .entree:hover i {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  color: #99e2d0;
-}
-.containerMenu section.entrees .entree .animation {
-  background: rgb(153, 226, 208);
-  height: 100%;
-  width: 60px;
-  position: absolute;
-  right: 0;
-  border-radius: 0 15px 15px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  visibility: hidden;
-  -webkit-transition: ease 0.4s;
-  transition: ease 0.4s;
-}
-.containerMenu section.entrees .entree i {
-  border-radius: 50%;
-  background: white;
-  width: 20px;
-  height: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-.containerMenu section.entrees .entree i:after {
-  content: "";
-}
-.containerMenu section.entrees .entree .entreeTxt {
-  padding-left: 15px;
-  width: 100%;
-}
-.containerMenu section.entrees .entree .entreeTxt span {
-  font-weight: 900;
-  font-size: 15px;
-  line-height: 30px;
-}
-.containerMenu section.entrees .entree .price {
-  padding-right: 20px;
-  padding-top: 40px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  height: 100%;
-  -webkit-transition: ease 0.4s;
-  transition: ease 0.4s;
-}
-
-.buttonMenu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: rgb(246, 246, 246);
-  padding: 20px;
-}
-@media screen and (min-width: 1400px) {
-  .buttonMenu {
-    width: 1050px;
-    margin: 0 auto;
-  }
-}
-.buttonMenu button.discoverMenu {
-  width: 190px;
-  height: 50px;
-  border-radius: 40px;
-  margin-bottom: 20px;
-  color: white;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  background: rgb(147, 86, 220);
-  background: linear-gradient(6deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%, rgb(153, 226, 208) 100%);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  -webkit-box-shadow: 2px 2px 15px 5px rgba(54, 54, 54, 0.66);
-  box-shadow: 2px 2px 15px 5px rgba(54, 54, 54, 0.263);
-}
-.buttonMenu button.discoverMenu:hover {
-  -webkit-filter: brightness(1.1);
-          filter: brightness(1.1);
-}
-
-.animEntree {
-  -webkit-animation: apparition 1s ease-in-out forwards;
-          animation: apparition 1s ease-in-out forwards;
-}
-@keyframes apparition {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.animPlat {
-  -webkit-animation: apparition 2s ease-in-out forwards;
-          animation: apparition 2s ease-in-out forwards;
-}
-@keyframes apparition {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.animDessert {
-  -webkit-animation: apparition 3s ease-in-out forwards;
-          animation: apparition 3s ease-in-out forwards;
-}
-@keyframes apparition {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }/*# sourceMappingURL=index.css.map */

@@ -10,10 +10,11 @@ section.background{
 
     .titleMenu {
         display: flex;
-        justify-content:center;
+        justify-content:flex-start;
         border-radius: 40px 40px 0 0;
         background: rgb(246,246,246);
         padding-top: 30px;
+        padding-left: 15px;
         position: absolute;
         width: 100%;
         bottom: -1px;
@@ -29,7 +30,7 @@ section.background{
        h1{
         font-family: 'Shrikhand' ,sans-serif;
         font-weight: 200;
-        font-size: 25px;
+        font-size: 26px;
         padding-right: 15px;
        } 
        i{
@@ -64,11 +65,12 @@ section.background{
     .containerMenu{
                 background: rgb(246,246,246);
                 padding-bottom: 10px;
-                padding-top: 30px;
+                
 
                 @media screen and (min-width:1400px) {
                     width: 1050px;
                     margin: 0 auto;
+                    padding-top: 50px;
                 }
        
     section.entrees{
@@ -95,8 +97,8 @@ section.background{
             
         }
         .entree{
-                height: 90px;
-                background: white;
+                height: 75px;
+                background: rgb(255, 255, 255);
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
