@@ -51,24 +51,17 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-animation: stop ease-in-out 3s forwards;
           animation: stop ease-in-out 3s forwards;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
 }
 @-webkit-keyframes stop {
   to {
-    display: none;
+    visibility: hidden;
   }
 }
 @keyframes stop {
   to {
-    display: none;
+    visibility: hidden;
   }
 }
 .animLoader .loaderElement {
@@ -101,6 +94,8 @@
   position: absolute;
   -webkit-transform: translateX(10%);
           transform: translateX(10%);
+  top: 10%;
+  right: 30%;
 }
 
 .loaderElement:nth-child(1) {
@@ -108,10 +103,6 @@
           animation: handAnim 0.8s ease-in-out infinite;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
-}
-.loaderElement:nth-child(1)::before {
-  top: 10%;
-  right: 30%;
 }
 .loaderElement:nth-child(1)::after {
   top: 75%;
@@ -125,10 +116,6 @@
   -webkit-animation-delay: 1.1s;
           animation-delay: 1.1s;
 }
-.loaderElement:nth-child(2)::before {
-  top: 10%;
-  right: 30%;
-}
 .loaderElement:nth-child(2)::after {
   top: 80%;
   left: 50%;
@@ -141,10 +128,6 @@
           animation-delay: 1.2s;
   height: 70px;
 }
-.loaderElement:nth-child(3)::before {
-  top: 10%;
-  right: 30%;
-}
 .loaderElement:nth-child(3)::after {
   top: 83%;
   left: 50%;
@@ -156,10 +139,6 @@
   -webkit-animation-delay: 1.3s;
           animation-delay: 1.3s;
   height: 55px;
-}
-.loaderElement:nth-child(4)::before {
-  top: 10%;
-  right: 30%;
 }
 .loaderElement:nth-child(4)::after {
   top: 80%;
@@ -897,8 +876,8 @@ section.background .titleMenu .fa-solid:hover {
 }
 
 .animEntree {
-  -webkit-animation: apparition 1s ease-in-out forwards;
-          animation: apparition 1s ease-in-out forwards;
+  -webkit-animation: apparition 1s ease-in-out;
+          animation: apparition 1s ease-in-out;
 }
 @-webkit-keyframes apparition {
   0% {
@@ -918,8 +897,8 @@ section.background .titleMenu .fa-solid:hover {
 }
 
 .animPlat {
-  -webkit-animation: apparition 2s ease-in-out forwards;
-          animation: apparition 2s ease-in-out forwards;
+  -webkit-animation: apparition 2s ease-in-out;
+          animation: apparition 2s ease-in-out;
 }
 @keyframes apparition {
   0% {
@@ -931,8 +910,8 @@ section.background .titleMenu .fa-solid:hover {
 }
 
 .animDessert {
-  -webkit-animation: apparition 3s ease-in-out forwards;
-          animation: apparition 3s ease-in-out forwards;
+  -webkit-animation: apparition 3s ease-in-out;
+          animation: apparition 3s ease-in-out;
 }
 @keyframes apparition {
   0% {

@@ -96,6 +96,8 @@ section.background{
             }
             
         }
+
+    //********** Creation et animation menu *********** //
         .entree{
                 height: 75px;
                 background: rgb(255, 255, 255);
@@ -222,7 +224,7 @@ section.background{
     
     //*********** Animation appartition menu**************/
     .animEntree{
-        animation: apparition 1s ease-in-out forwards;
+        animation: apparition 1s ease-in-out;
       @keyframes apparition {
           0%{
               opacity: 0;
@@ -233,7 +235,7 @@ section.background{
       }  
       }
     .animPlat{
-        animation: apparition 2s ease-in-out forwards;
+        animation: apparition 2s ease-in-out;
       @keyframes apparition {
           0%{
               opacity: 0;
@@ -245,7 +247,7 @@ section.background{
       }
 
     .animDessert{
-        animation: apparition 3s ease-in-out forwards;
+        animation: apparition 3s ease-in-out;
       @keyframes apparition {
           0%{
               opacity: 0;
